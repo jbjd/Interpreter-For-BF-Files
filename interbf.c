@@ -21,7 +21,7 @@ void readFile(char *fileStr, long index){
 				--cells[cellIndex];
 				break;
 			case '.':
-				printf("%c", cells[cellIndex]);
+				putc(cells[cellIndex], stdout);
 				break;
 			case ',':
 				cells[cellIndex] = getc(stdin);
